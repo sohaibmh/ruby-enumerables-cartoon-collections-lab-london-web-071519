@@ -27,19 +27,9 @@ end
 puts long_planeteer_calls(long_planeteer_calls)
 puts
 def find_the_cheese(array)
-  cheese_types = ["cheddar", "gouda", "camembert", "Swiss cheese"]
-  array.find {|cheese| cheese == cheese_types}
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  array.find {|cheese| cheese == "cheddar" or cheese == "gouda" or cheese == "camembert"}
 end
-
-def words_with_b(arr)
- a = []
- arr.each {|x| a.push if x[0] == "b"}
- a
-end
-
-a = ["b"]
-puts words_with_b(a)
-
 
 cheddar_cheese = ["banana", "cheddar", "sock", "gouda"]
 print find_the_cheese(cheddar_cheese)
